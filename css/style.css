@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+} 
+
+/* Navbar Principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: black;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}   
+
+.menu a {
+    text-decoration: none;
+    color : rgb(130, 120, 120);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* efecto hover para el menu*/
+.menu a:hover {
+    color: #00eaff;
+}
+
+/* Boton */
+.btn-connect {
+    padding: 12px 28px;
+    background: transparent;
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    /* Glow */
+    box-shadow: 0 0 10px #00eaff,
+                0 0 20px #00eaff inset;
+}
+
+.btn-connect:hover {
+    background: #00eaff;
+    color: #0b0f1a;
+    box-shadow: 0 0 20px #00eaff,
+                0 0 40px #00eaff,
+                0 0 60px #00eaff;
+
+}
+
