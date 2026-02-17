@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-color: #06090f;
     color: white;
@@ -79,6 +84,30 @@ body::before {
     .btn-connect {
         padding: 6px 12px;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        padding: 6px 8px;
+    }
+
+    .logo img {
+        height: 25px;
+    }
+
+    .menu {
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .btn-connect {
+        padding: 5px 10px;
+        font-size: 9px;
     }
 }
 
@@ -196,31 +225,112 @@ body::before {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 30px 8px;
-        gap: 20px;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-        line-height: 1.2;
-        word-wrap: break-word;
-    }
-
-    .hero p {
-        font-size: 13px;
-    }
-
-    .stats {
-        gap: 12px;
+        padding: 15px 5px;
+        gap: 10px;
         width: 100%;
     }
 
+    .hero-left {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-right {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 16px;
+        line-height: 1.1;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 11px;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .badge {
+        font-size: 9px;
+        padding: 4px 8px;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .stats {
+        gap: 8px;
+        width: 100%;
+    }
+
+    .stats div {
+        min-width: 60px;
+    }
+
     .stats h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .stats p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        padding: 10px 3px;
+        gap: 8px;
+    }
+
+    .hero h1 {
+        font-size: 14px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .badge {
+        font-size: 8px;
+        padding: 3px 6px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 6px 10px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .stats {
+        gap: 6px;
+    }
+
+    .stats h3 {
         font-size: 11px;
+    }
+
+    .stats p {
+        font-size: 8px;
     }
 }
 
@@ -346,6 +456,19 @@ body::before {
     }
 }
 
+@media (max-width: 480px) {
+    .dashboard-image {
+        max-width: 90%;
+        max-height: 200px;
+    }
+
+    .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /* Sección de módulos */
 .modules {
@@ -362,7 +485,13 @@ body::before {
 
 @media (max-width: 480px) {
     .modules {
-        padding: 40px 12px;
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modules {
+        padding: 20px 8px;
     }
 }
 
@@ -387,6 +516,13 @@ body::before {
     .modules h2 {
         font-size: 24px;
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modules h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 }
 
@@ -473,6 +609,31 @@ body::before {
 
     .module-card h3 {
         font-size: 16px;
+    }
+
+    .module-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modules-grid {
+        gap: 12px;
+    }
+
+    .module-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .module-card h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .module-card p {
+        font-size: 11px;
+        line-height: 1.5;
     }
 }
 
@@ -781,5 +942,13 @@ body::before {
         padding: 20px 15px;
         gap: 10px;
         font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        padding: 15px 10px;
+        gap: 8px;
+        font-size: 9px;
     }
 }

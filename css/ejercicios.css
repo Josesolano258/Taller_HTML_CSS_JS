@@ -5,6 +5,11 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -69,6 +74,17 @@ body > * {
     }
 }
 
+@media (max-width: 360px) {
+    body {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    body > * {
+        padding: 0 5px;
+    }
+}
+
 #menu {
     width: 100%;
     padding: 12px;
@@ -83,7 +99,14 @@ body > * {
 @media (max-width: 480px) {
     #menu {
         padding: 10px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    #menu {
+        padding: 8px;
+        font-size: 11px;
     }
 }
 
@@ -105,9 +128,24 @@ body > * {
 }
 
 @media (max-width: 480px) {
+    #inputs {
+        gap: 8px;
+    }
+
     #inputs input {
         padding: 10px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    #inputs {
+        gap: 6px;
+    }
+
+    #inputs input {
+        padding: 8px;
+        font-size: 12px;
     }
 }
 
@@ -150,7 +188,19 @@ button {
         width: 100%;
         margin-left: 0;
         margin-bottom: 10px;
-        padding: 14px;
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    #btn,
+    #btnLimpiar {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 8px;
+        padding: 10px;
+        font-size: 11px;
     }
 }
 
