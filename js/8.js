@@ -1,2 +1,16 @@
-// Ejercicio 8.Invertir Cadena: Crea una función que reciba un texto y lo devuelva invertido (ej:
-// "hola" -> "aloh") utilizando un ciclo for decrementado.
+// Invertir un texto letra por letra
+
+function ejercicio8(texto) {
+
+    if (!texto) {
+        return "Ingrese un texto válido.";
+    }
+
+    let invertido = "";
+
+    for (let i = texto.length - 1; i >= 0; i--) {
+        invertido += texto[i];
+    }
+
+    return `Texto invertido: ${invertido}`;
+}

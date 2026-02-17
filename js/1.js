@@ -1,5 +1,4 @@
-//Ejercicio 1. Par o impar:Escribe una función que reciba un número y determine mediante un
-//condicional si es par o impar. Usa un ciclo para evaluar números del 1 al 10.
+// Función que determina si un número es par o impar
 
 function ejercicio1(numero) {
 
@@ -9,7 +8,7 @@ function ejercicio1(numero) {
 
     let resultado = "";
 
-    // Evaluar el número ingresado
+    // Evaluamos si es par o impar
     if (numero % 2 === 0) {
         resultado += `${numero} es PAR<br><br>`;
     } else {

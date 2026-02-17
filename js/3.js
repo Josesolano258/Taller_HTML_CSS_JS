@@ -1,2 +1,19 @@
-//Ejercicio 3. Contador de Vocales:  Crea una función que reciba una palabra y, recorriéndola con
-//un ciclo, cuente cuántas vocales tiene.
+// Contar cuantas vocales tiene una palabra
+
+
+function ejercicio3(palabra) {
+    let contador = 0;
+    const vocales = "aeiou";
+
+    // Todo en minúscula para poder comparar
+    palabra = palabra.toLowerCase();
+
+    for (let i = 0; i < palabra.length; i++) {
+        if (vocales.includes(palabra[i])) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+

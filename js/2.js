@@ -1,5 +1,4 @@
-//Ejercicio 2.Tabla de multiplicar: Crea una función que reciba un número (ej. 5) e imprima su
-//tabla de multiplicar del 1 al 10 usando un ciclo for
+// Tabla de multiplicar de un número
 
 function ejercicio2(numero) {
 
